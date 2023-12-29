@@ -6,15 +6,14 @@ class SpaceMediaEntity extends Equatable {
   final String title;
   final String mediaUrl;
 
-  const SpaceMediaEntity({required this.description, required this.mediaType, required this.title, required this.mediaUrl});
+  const SpaceMediaEntity(
+      {required this.description,
+      required this.mediaType,
+      required this.title,
+      required this.mediaUrl});
 
   //método para comparação com equatable
   @override
-  List<Object?> get props => [
-    description,
-    mediaType,
-    title,
-    mediaUrl
-  ];
-  
+  List<Object?> get props => [description, mediaType, title, mediaUrl];
+
 }
